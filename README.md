@@ -149,8 +149,6 @@ python prob_cbr/prob_cbr_streaming.py -dataset FB122 \
 
 ## Citation
 
-*Temporary arXiv citation*
-
 ```
 @inproceedings{prob_cbr,
   title = {Probabilistic Case-based Reasoning for Open-World Knowledge Graph Completion},
