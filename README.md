@@ -147,6 +147,10 @@ python prob_cbr/prob_cbr_streaming.py -dataset FB122 \
   --warm_start
 ```
 
+### KBC streaming experiments with RotatE
+
+The code can be found [here](https://github.com/ameyagodbole/KnowledgeGraphEmbedding/tree/online_stream)
+
 ## Citation
 
 ```
