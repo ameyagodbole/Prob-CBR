@@ -152,12 +152,10 @@ python prob_cbr/prob_cbr_streaming.py -dataset FB122 \
 *Temporary arXiv citation*
 
 ```
-@misc{das2020probabilistic,
-      title={Probabilistic Case-based Reasoning for Open-World Knowledge Graph Completion}, 
-      author={Rajarshi Das and Ameya Godbole and Nicholas Monath and Manzil Zaheer and Andrew McCallum},
-      year={2020},
-      eprint={2010.03548},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{prob_cbr,
+  title = {Probabilistic Case-based Reasoning for Open-World Knowledge Graph Completion},
+  author = {Das, Rajarshi and Godbole, Ameya and Monath, Nicholas and Zaheer, Manzil and McCallum, Andrew},
+  booktitle = {Findings of EMNLP},
+  year = 2020
 }
 ```
