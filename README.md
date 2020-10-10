@@ -5,11 +5,13 @@ Code for the EMNLP-Findings paper -- [Probabilistic Case-based Reasoning for Ope
 
 ## Download data
 
-Download the experiment data from [here](https://drive.google.com/file/d/1SJPgYegakev5_WJRuuUreRfv1znNCsK_/view?usp=sharing), untar it in the root directory of the project.
+Download the experiment `prob-cbr-data` from [here](http://iesl.cs.umass.edu/downloads/cbr-akbc-data), untar it in the root directory of the project.
 The compressed size is ~17M and uncompressed size is ~91M. 
 ```bash
-tar xzvf prob-cbr-data.tar.gz
+wget http://iesl.cs.umass.edu/downloads/cbr-akbc-data/prob-cbr-data.tar.gz && tar xzvf prob-cbr-data.tar.gz
 ```
+
+NOTE: `data_dir` expects the path to the top level directory `prob-cbr-data`
 
 ## KBC experiments
 
