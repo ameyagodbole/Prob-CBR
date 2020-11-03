@@ -22,7 +22,7 @@ NOTE: `data_dir` expects the path to the top level directory `prob-cbr-data`
 ```bash
 # WN18RR Table 3
 
-python prob_cbr/prob_cbr.py --dataset WN18RR \
+python prob_cbr/pr_cbr.py --dataset WN18RR \
   --data_dir ../prob-cbr-data/ \
   --expt_dir ../prob-cbr-expts/ \
   --subgraph_file_name paths_1000_3hop_no_loop.pkl \
@@ -33,7 +33,7 @@ python prob_cbr/prob_cbr.py --dataset WN18RR \
 
 # WN18RR Table 5
 
-python prob_cbr/prob_cbr.py --dataset WN18RR \
+python prob_cbr/pr_cbr.py --dataset WN18RR \
   --data_dir ../prob-cbr-data/ \
   --expt_dir ../prob-cbr-expts/ \
   --subgraph_file_name paths_1000_5hop_no_loop.pkl \
@@ -46,7 +46,7 @@ python prob_cbr/prob_cbr.py --dataset WN18RR \
 ```bash
 # FB122
 
-python prob_cbr/prob_cbr.py --dataset FB122 \
+python prob_cbr/pr_cbr.py --dataset FB122 \
   --data_dir ../prob-cbr-data/ \
   --expt_dir ../prob-cbr-expts/ \
   --subgraph_file_name paths_1000_3hop_no_loop.pkl \
@@ -55,7 +55,7 @@ python prob_cbr/prob_cbr.py --dataset FB122 \
   --num_paths_to_collect 1000 --max_path_len 3 --prevent_loops 1 \
   --name_of_run fb122_3hop_noloop_test1
 
-python prob_cbr/prob_cbr.py --dataset FB122 \
+python prob_cbr/pr_cbr.py --dataset FB122 \
   --data_dir ../prob-cbr-data/ \
   --expt_dir ../prob-cbr-expts/ \
   --subgraph_file_name paths_1000_3hop_no_loop.pkl \
@@ -64,7 +64,7 @@ python prob_cbr/prob_cbr.py --dataset FB122 \
   --num_paths_to_collect 1000 --max_path_len 3 --prevent_loops 1 \
   --name_of_run fb122_3hop_noloop_test2
 
-python prob_cbr/prob_cbr.py --dataset FB122 \
+python prob_cbr/pr_cbr.py --dataset FB122 \
   --data_dir ../prob-cbr-data/ \
   --expt_dir ../prob-cbr-expts/ \
   --subgraph_file_name paths_1000_3hop_no_loop.pkl \
@@ -77,7 +77,7 @@ python prob_cbr/prob_cbr.py --dataset FB122 \
 ```bash
 # NELL
 
-python prob_cbr/prob_cbr.py --dataset nell \
+python prob_cbr/pr_cbr.py --dataset nell \
   --data_dir ../prob-cbr-data/ \
   --expt_dir ../prob-cbr-expts/ \
   --subgraph_file_name paths_1000_3hop_no_loop.pkl \
