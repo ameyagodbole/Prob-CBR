@@ -605,6 +605,7 @@ def main(args):
             if paths is None:
                 continue
             all_paths[e1] = paths
+        os.makedirs(subgraph_dir, exist_ok=True)
         with open(os.path.join(subgraph_dir, args.subgraph_file_name), "wb") as fout:
             pickle.dump(all_paths, fout)
 
