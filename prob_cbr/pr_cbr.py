@@ -701,6 +701,11 @@ def main(args):
 
     linkage_bck = args.linkage
     args.linkage = 0.0
+
+    bck_dir_name = os.path.join(data_dir, "linkage={}".format(args.linkage))
+    if not os.path.exists(bck_dir_name):
+        os.makedirs(bck_dir_name)
+
     cluster_assignments_bck = args.cluster_assignments
     args.cluster_assignments = np.zeros_like(args.cluster_assignments)
     path_prior_map_filenm = os.path.join(data_dir, "linkage={}".format(args.linkage), "path_prior_map.pkl")
