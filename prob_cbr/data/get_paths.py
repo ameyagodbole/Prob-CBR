@@ -67,7 +67,7 @@ def main(args):
 
     kg_file = os.path.join(data_dir, "graph.txt")
     unique_entities = get_unique_entities(kg_file)
-    train_adj_list = create_adj_list(kg_file)
+    train_adj_list = create_adj_list(kg_file, args.add_inv_edges)
     st_time = time.time()
     paths_map = defaultdict(list)
     for ctr, e1 in enumerate(tqdm(unique_entities)):
@@ -98,6 +98,7 @@ if __name__ == '__main__':
     parser.add_argument("--data_dir", type=str, default="/mnt/nfs/scratch1/rajarshi/deep_case_based_reasoning/")
     parser.add_argument("--num_paths_to_collect", type=int, default=1000)
     parser.add_argument("--prevent_loops", type=int, choices=[0, 1], default=1, help="prevent sampling of looped paths")
+    parser.add_argument("--add_inv_edges", action="store_true")
     parser.add_argument("--use_wandb", type=int, choices=[0, 1], default=0, help="Set to 1 if using W&B")
     args = parser.parse_args()
 
