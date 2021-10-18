@@ -29,13 +29,17 @@ def augment_kb_with_inv_edges(file_name: str) -> None:
     o.close()
 
 
-def create_adj_list(file_name: str) -> DefaultDict[str, List[Tuple[str, str]]]:
+def create_adj_list(file_name: str, add_inv_edges=False) -> DefaultDict[str, List[Tuple[str, str]]]:
     out_map = defaultdict(list)
     fin = open(file_name)
     for line_ctr, line in tqdm(enumerate(fin)):
         line = line.strip()
         e1, r, e2 = line.split("\t")
         out_map[e1].append((r, e2))
+        if add_inv_edges:
+            r_inv = "inv_" + r
+            out_map[e2].append((r_inv, e1))
+
     return out_map
 
 
